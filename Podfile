@@ -7,7 +7,6 @@ target 'SiestaExample' do
 
   # Pods for SiestaExample
   pod 'Siesta', '~> 1.0'
-  pod 'SwiftyJSON', '~> 4.0'
 
   target 'SiestaExampleTests' do
     inherit! :search_paths

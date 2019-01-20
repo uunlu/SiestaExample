@@ -8,7 +8,6 @@
 
 import Foundation
 import Siesta
-import SwiftyJSON
 
 
 class API {
