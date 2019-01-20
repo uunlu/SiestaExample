@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		351A1C8621F379ED00DC7FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1C8521F379ED00DC7FEE /* AppDelegate.swift */; };
+		351A1C8821F379ED00DC7FEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1C8721F379ED00DC7FEE /* ViewController.swift */; };
+		351A1C8B21F379ED00DC7FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351A1C8921F379ED00DC7FEE /* Main.storyboard */; };
+		351A1C8D21F379F100DC7FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351A1C8C21F379F100DC7FEE /* Assets.xcassets */; };
+		351A1C9021F379F100DC7FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351A1C8E21F379F100DC7FEE /* LaunchScreen.storyboard */; };
+		351A1C9B21F379F100DC7FEE /* SiestaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1C9A21F379F100DC7FEE /* SiestaExampleTests.swift */; };
+		351A1CA621F379F100DC7FEE /* SiestaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1CA521F379F100DC7FEE /* SiestaExampleUITests.swift */; };
+		351A1CB621F37B0500DC7FEE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1CB521F37B0500DC7FEE /* API.swift */; };
+		351A1CB921F384B200DC7FEE /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1CB821F384B200DC7FEE /* SearchResult.swift */; };
+		351A1CBD21F49C5E00DC7FEE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A1CBC21F49C5E00DC7FEE /* ViewModel.swift */; };
+		74C2C17F5B02CA74B5DF3DDA /* Pods_SiestaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D44377D651DA122320E710 /* Pods_SiestaExampleTests.framework */; };
+		959DD2DB37499B6011F40574 /* Pods_SiestaExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C521CA835DF41DBA88435D4E /* Pods_SiestaExampleUITests.framework */; };
+		CC914204560A4829C6543ECA /* Pods_SiestaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA326F5BFC812922E9FB9BB5 /* Pods_SiestaExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		351A1C9721F379F100DC7FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 351A1C7A21F379ED00DC7FEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 351A1C8121F379ED00DC7FEE;
+			remoteInfo = SiestaExample;
+		};
+		351A1CA221F379F100DC7FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 351A1C7A21F379ED00DC7FEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 351A1C8121F379ED00DC7FEE;
+			remoteInfo = SiestaExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D44377D651DA122320E710 /* Pods_SiestaExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiestaExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351A1C8221F379ED00DC7FEE /* SiestaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiestaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		351A1C8521F379ED00DC7FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		351A1C8721F379ED00DC7FEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		351A1C8A21F379ED00DC7FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		351A1C8C21F379F100DC7FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		351A1C8F21F379F100DC7FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		351A1C9121F379F100DC7FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351A1C9621F379F100DC7FEE /* SiestaExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiestaExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		351A1C9A21F379F100DC7FEE /* SiestaExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiestaExampleTests.swift; sourceTree = "<group>"; };
+		351A1C9C21F379F100DC7FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351A1CA121F379F100DC7FEE /* SiestaExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiestaExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		351A1CA521F379F100DC7FEE /* SiestaExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiestaExampleUITests.swift; sourceTree = "<group>"; };
+		351A1CA721F379F100DC7FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351A1CB521F37B0500DC7FEE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		351A1CB821F384B200DC7FEE /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		351A1CBC21F49C5E00DC7FEE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3526DA807C28AA68CAC9C4F1 /* Pods-SiestaExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExampleTests/Pods-SiestaExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		584B582F8BF2812CD28FD765 /* Pods-SiestaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExample/Pods-SiestaExample.release.xcconfig"; sourceTree = "<group>"; };
+		801F7A7D2DC14E61EC57C4B0 /* Pods-SiestaExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExampleTests/Pods-SiestaExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B41B6A679A66740B6EDB5134 /* Pods-SiestaExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExampleUITests/Pods-SiestaExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD6D8667A4480ECD37076209 /* Pods-SiestaExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExampleUITests/Pods-SiestaExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C521CA835DF41DBA88435D4E /* Pods_SiestaExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiestaExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C580DD66A7D89468C3B1ADAF /* Pods-SiestaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiestaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiestaExample/Pods-SiestaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CA326F5BFC812922E9FB9BB5 /* Pods_SiestaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiestaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		351A1C7F21F379ED00DC7FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC914204560A4829C6543ECA /* Pods_SiestaExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9321F379F100DC7FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C2C17F5B02CA74B5DF3DDA /* Pods_SiestaExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9E21F379F100DC7FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959DD2DB37499B6011F40574 /* Pods_SiestaExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		351A1C7921F379EC00DC7FEE = {
+			isa = PBXGroup;
+			children = (
+				351A1C8421F379ED00DC7FEE /* SiestaExample */,
+				351A1C9921F379F100DC7FEE /* SiestaExampleTests */,
+				351A1CA421F379F100DC7FEE /* SiestaExampleUITests */,
+				351A1C8321F379ED00DC7FEE /* Products */,
+				C818C64DDFB30CF995869485 /* Pods */,
+				C2B28051760675831F73DD31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		351A1C8321F379ED00DC7FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				351A1C8221F379ED00DC7FEE /* SiestaExample.app */,
+				351A1C9621F379F100DC7FEE /* SiestaExampleTests.xctest */,
+				351A1CA121F379F100DC7FEE /* SiestaExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		351A1C8421F379ED00DC7FEE /* SiestaExample */ = {
+			isa = PBXGroup;
+			children = (
+				351A1CB721F3840300DC7FEE /* Models */,
+				351A1CB421F37ADC00DC7FEE /* Service */,
+				351A1CB321F37ACC00DC7FEE /* Controllers */,
+				351A1C8521F379ED00DC7FEE /* AppDelegate.swift */,
+				351A1C8921F379ED00DC7FEE /* Main.storyboard */,
+				351A1C8C21F379F100DC7FEE /* Assets.xcassets */,
+				351A1C8E21F379F100DC7FEE /* LaunchScreen.storyboard */,
+				351A1C9121F379F100DC7FEE /* Info.plist */,
+			);
+			path = SiestaExample;
+			sourceTree = "<group>";
+		};
+		351A1C9921F379F100DC7FEE /* SiestaExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				351A1C9A21F379F100DC7FEE /* SiestaExampleTests.swift */,
+				351A1C9C21F379F100DC7FEE /* Info.plist */,
+			);
+			path = SiestaExampleTests;
+			sourceTree = "<group>";
+		};
+		351A1CA421F379F100DC7FEE /* SiestaExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				351A1CA521F379F100DC7FEE /* SiestaExampleUITests.swift */,
+				351A1CA721F379F100DC7FEE /* Info.plist */,
+			);
+			path = SiestaExampleUITests;
+			sourceTree = "<group>";
+		};
+		351A1CB321F37ACC00DC7FEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				351A1C8721F379ED00DC7FEE /* ViewController.swift */,
+				351A1CBC21F49C5E00DC7FEE /* ViewModel.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		351A1CB421F37ADC00DC7FEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				351A1CB521F37B0500DC7FEE /* API.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		351A1CB721F3840300DC7FEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				351A1CB821F384B200DC7FEE /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2B28051760675831F73DD31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA326F5BFC812922E9FB9BB5 /* Pods_SiestaExample.framework */,
+				10D44377D651DA122320E710 /* Pods_SiestaExampleTests.framework */,
+				C521CA835DF41DBA88435D4E /* Pods_SiestaExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C818C64DDFB30CF995869485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C580DD66A7D89468C3B1ADAF /* Pods-SiestaExample.debug.xcconfig */,
+				584B582F8BF2812CD28FD765 /* Pods-SiestaExample.release.xcconfig */,
+				801F7A7D2DC14E61EC57C4B0 /* Pods-SiestaExampleTests.debug.xcconfig */,
+				3526DA807C28AA68CAC9C4F1 /* Pods-SiestaExampleTests.release.xcconfig */,
+				B41B6A679A66740B6EDB5134 /* Pods-SiestaExampleUITests.debug.xcconfig */,
+				BD6D8667A4480ECD37076209 /* Pods-SiestaExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		351A1C8121F379ED00DC7FEE /* SiestaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351A1CAA21F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExample" */;
+			buildPhases = (
+				6220DC5AD9800EED11746C49 /* [CP] Check Pods Manifest.lock */,
+				351A1C7E21F379ED00DC7FEE /* Sources */,
+				351A1C7F21F379ED00DC7FEE /* Frameworks */,
+				351A1C8021F379ED00DC7FEE /* Resources */,
+				68278B782417E263AC44A0E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiestaExample;
+			productName = SiestaExample;
+			productReference = 351A1C8221F379ED00DC7FEE /* SiestaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		351A1C9521F379F100DC7FEE /* SiestaExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351A1CAD21F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExampleTests" */;
+			buildPhases = (
+				86472B74393C5D2101D0EDFA /* [CP] Check Pods Manifest.lock */,
+				351A1C9221F379F100DC7FEE /* Sources */,
+				351A1C9321F379F100DC7FEE /* Frameworks */,
+				351A1C9421F379F100DC7FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				351A1C9821F379F100DC7FEE /* PBXTargetDependency */,
+			);
+			name = SiestaExampleTests;
+			productName = SiestaExampleTests;
+			productReference = 351A1C9621F379F100DC7FEE /* SiestaExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		351A1CA021F379F100DC7FEE /* SiestaExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351A1CB021F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExampleUITests" */;
+			buildPhases = (
+				51E2433903147F185D2A669D /* [CP] Check Pods Manifest.lock */,
+				351A1C9D21F379F100DC7FEE /* Sources */,
+				351A1C9E21F379F100DC7FEE /* Frameworks */,
+				351A1C9F21F379F100DC7FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				351A1CA321F379F100DC7FEE /* PBXTargetDependency */,
+			);
+			name = SiestaExampleUITests;
+			productName = SiestaExampleUITests;
+			productReference = 351A1CA121F379F100DC7FEE /* SiestaExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		351A1C7A21F379ED00DC7FEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ugur Unlu";
+				TargetAttributes = {
+					351A1C8121F379ED00DC7FEE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					351A1C9521F379F100DC7FEE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 351A1C8121F379ED00DC7FEE;
+					};
+					351A1CA021F379F100DC7FEE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 351A1C8121F379ED00DC7FEE;
+					};
+				};
+			};
+			buildConfigurationList = 351A1C7D21F379ED00DC7FEE /* Build configuration list for PBXProject "SiestaExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 351A1C7921F379EC00DC7FEE;
+			productRefGroup = 351A1C8321F379ED00DC7FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				351A1C8121F379ED00DC7FEE /* SiestaExample */,
+				351A1C9521F379F100DC7FEE /* SiestaExampleTests */,
+				351A1CA021F379F100DC7FEE /* SiestaExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		351A1C8021F379ED00DC7FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A1C9021F379F100DC7FEE /* LaunchScreen.storyboard in Resources */,
+				351A1C8D21F379F100DC7FEE /* Assets.xcassets in Resources */,
+				351A1C8B21F379ED00DC7FEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9421F379F100DC7FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9F21F379F100DC7FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51E2433903147F185D2A669D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiestaExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6220DC5AD9800EED11746C49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiestaExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68278B782417E263AC44A0E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SiestaExample/Pods-SiestaExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiestaExample/Pods-SiestaExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86472B74393C5D2101D0EDFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiestaExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		351A1C7E21F379ED00DC7FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A1CBD21F49C5E00DC7FEE /* ViewModel.swift in Sources */,
+				351A1C8821F379ED00DC7FEE /* ViewController.swift in Sources */,
+				351A1CB621F37B0500DC7FEE /* API.swift in Sources */,
+				351A1CB921F384B200DC7FEE /* SearchResult.swift in Sources */,
+				351A1C8621F379ED00DC7FEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9221F379F100DC7FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A1C9B21F379F100DC7FEE /* SiestaExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351A1C9D21F379F100DC7FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A1CA621F379F100DC7FEE /* SiestaExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		351A1C9821F379F100DC7FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 351A1C8121F379ED00DC7FEE /* SiestaExample */;
+			targetProxy = 351A1C9721F379F100DC7FEE /* PBXContainerItemProxy */;
+		};
+		351A1CA321F379F100DC7FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 351A1C8121F379ED00DC7FEE /* SiestaExample */;
+			targetProxy = 351A1CA221F379F100DC7FEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		351A1C8921F379ED00DC7FEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				351A1C8A21F379ED00DC7FEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		351A1C8E21F379F100DC7FEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				351A1C8F21F379F100DC7FEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		351A1CA821F379F100DC7FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		351A1CA921F379F100DC7FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		351A1CAB21F379F100DC7FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C580DD66A7D89468C3B1ADAF /* Pods-SiestaExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		351A1CAC21F379F100DC7FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584B582F8BF2812CD28FD765 /* Pods-SiestaExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		351A1CAE21F379F100DC7FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801F7A7D2DC14E61EC57C4B0 /* Pods-SiestaExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiestaExample.app/SiestaExample";
+			};
+			name = Debug;
+		};
+		351A1CAF21F379F100DC7FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3526DA807C28AA68CAC9C4F1 /* Pods-SiestaExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiestaExample.app/SiestaExample";
+			};
+			name = Release;
+		};
+		351A1CB121F379F100DC7FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41B6A679A66740B6EDB5134 /* Pods-SiestaExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiestaExample;
+			};
+			name = Debug;
+		};
+		351A1CB221F379F100DC7FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6D8667A4480ECD37076209 /* Pods-SiestaExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3UP8K5Y56;
+				INFOPLIST_FILE = SiestaExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HASELT.SiestaExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiestaExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		351A1C7D21F379ED00DC7FEE /* Build configuration list for PBXProject "SiestaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351A1CA821F379F100DC7FEE /* Debug */,
+				351A1CA921F379F100DC7FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351A1CAA21F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351A1CAB21F379F100DC7FEE /* Debug */,
+				351A1CAC21F379F100DC7FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351A1CAD21F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351A1CAE21F379F100DC7FEE /* Debug */,
+				351A1CAF21F379F100DC7FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351A1CB021F379F100DC7FEE /* Build configuration list for PBXNativeTarget "SiestaExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351A1CB121F379F100DC7FEE /* Debug */,
+				351A1CB221F379F100DC7FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 351A1C7A21F379ED00DC7FEE /* Project object */;
+}

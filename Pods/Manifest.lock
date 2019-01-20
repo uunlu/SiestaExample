@@ -1,0 +1,22 @@
+PODS:
+  - Siesta (1.4.2):
+    - Siesta/Core (= 1.4.2)
+  - Siesta/Core (1.4.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Siesta (~> 1.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Siesta
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Siesta: 337a9c39c9b78bba904286310c86562a886efdab
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 44a4a8b81ae6f6cb804098b6e19f2ac8b2a1a6e0
+
+COCOAPODS: 1.5.2

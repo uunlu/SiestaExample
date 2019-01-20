@@ -1,0 +1,6 @@
+framework module Pods_SiestaExample {
+  umbrella header "Pods-SiestaExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
