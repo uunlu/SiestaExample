@@ -37,14 +37,13 @@ class ViewController: UIViewController {
     func setup() {
         self.searchResultResource = _api.search(location: "Miami", term: "pizza")
     }
-
 }
 
 // MARK: ViewModel Data Update Delegate
 
 extension ViewController: ViewModelDelegate {
     func didSetModel<T>(model: T) where T : Any {
-        guard let model = model as? SearchResult else { return }
+        guard let model = model as? SearchResultDTO else { return }
         print(model)
     }
 }

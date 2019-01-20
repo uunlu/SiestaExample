@@ -8,35 +8,10 @@
 
 import Foundation
 
-struct SearchResults<T: Decodable>: Decodable {
-    let items: [T]
-    init?(json:Any) {
-        if let data = try? JSONSerialization.data(withJSONObject: json, options: []){
-            guard let me = try? JSONDecoder().decode(T.self, from: data)
-                else { return nil}
-            self = me as! SearchResults<T>
-        }else{
-            items = []
-        }
-    }
-}
-
 struct SearchResult: Codable {
     let businesses: [Business]?
     let total: Int?
     let region: Region?
-    
-    
-//    init?(json:Any) throws{
-//        if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
-//            guard let me = try? JSONDecoder().decode(SearchResult.self, from: data) else { return nil }
-//            self = me
-//        }else{
-//            businesses = nil
-//            total = 1
-//            region = nil
-//        }
-//    }
 }
 
 struct Business: Codable {
